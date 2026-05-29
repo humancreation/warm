@@ -4,7 +4,7 @@ const { title, site = "" } = Astro.props;
 const homeHref = site ? siteUrl(site) + "/" : url('');
 ---
 <div
-  class={"sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-ac rounded-b-ac-lg " + (!site ? 'max-lg:hidden' : 'lg:hidden')}
+  class={"sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-ac rounded-b-ac-lg " + (!site ? 'hidden' : 'lg:hidden')}
 >
   <div class="navbar">
     <div class="navbar-start">
